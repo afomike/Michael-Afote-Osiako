@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michael Osiako Afote — ML Engineer & AI Researcher | Healthcare AI · NLP · Fairness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#home" class="nav-logo">Michael<span>.</span></a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="#home"     class="mobile-link">Home</a>
+  <a href="#about"    class="mobile-link">About</a>
+  <a href="#featured" class="mobile-link">Featured</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#contact"  class="mobile-link">Contact</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="home" aria-label="Introduction">
+  <div class="hero-inner">
+    <h1 class="hero-title">
+      I build ML systems<br>that <em>work in the real world</em>
+    </h1>
+
+    <p class="hero-sub">
+      ML Engineer & AI Researcher specialising in healthcare AI, NLP for low-resource African languages, and fairness-aware systems. Seven deployed applications. One peer-reviewed publication. Every model ships.
+    </p>
+
+    <div class="hero-cta-group">
+      <a href="#projects" class="btn btn-primary">
+        View my work
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-outline">Get in touch</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Deployed applications</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Peer-reviewed paper</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">5</span>
+        <span class="stat-label">ML domains</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" aria-label="About me">
+  <div class="section-label">Who I am</div>
+  <h2 class="section-title">End-to-end ML.<br>Grounded in research.</h2>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm <strong>Michael Osiako Afote</strong>, a Machine Learning Engineer and AI Researcher based in Lagos, Nigeria. I graduated ranked 6th out of 214 (top 3%) with a B.Sc. in Computer Science from Federal University Lokoja — and I've spent every year since turning that foundation into deployed systems that solve real problems.
+      </p>
+      <p>
+        My work covers the full ML lifecycle: problem framing, data engineering, model selection, training, evaluation, and REST API deployment via Flask on Render. I don't just build classifiers — I build systems that can be explained to stakeholders and audited for fairness, which is why <strong>SHAP explainability</strong> and <strong>bias auditing</strong> appear throughout my projects.
+      </p>
+      <p>
+        My current focus is on three under-served problem spaces: <strong>healthcare AI in resource-constrained settings</strong>, <strong>NLP for African languages</strong>, and <strong>responsible hiring systems</strong>. These aren't trend-chasing — they're gaps where good ML engineering creates genuine impact.
+      </p>
+
+      <div class="about-highlight">
+        "Peer-reviewed and published in IJCA, 2025 — applied ensemble ML achieving high-accuracy fall detection for elderly patients, with real-time caretaker alerting."
+      </div>
+
+      <div class="pub-card">
+        <span class="pub-badge">IJCA · 2025 · DOI: 10.5120/ijca2025924684</span>
+        <h4>Accidental Fall Prediction and Detection in Elderly Persons using Ensemble Techniques</h4>
+        <p>Afote, M. O. &amp; Ochepa, F. O. · Vol. 186, No. 78, pp. 32–36</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:.1s">
+      <p style="font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Core Competencies</p>
+      <div class="skills-grid">
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">PyTorch / TensorFlow</div>
+        <div class="skill-chip">scikit-learn</div>
+        <div class="skill-chip">NLP / TF-IDF</div>
+        <div class="skill-chip">SHAP Explainability</div>
+        <div class="skill-chip">LLM Fine-tuning</div>
+        <div class="skill-chip">Ensemble Methods</div>
+        <div class="skill-chip">Flask / REST APIs</div>
+        <div class="skill-chip">DCGAN / GenAI</div>
+        <div class="skill-chip">Git / GitHub</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FEATURED PROJECT ══════════ -->
+<section id="featured" aria-label="Featured project">
+  <div class="section-label">Deep dive</div>
+  <h2 class="section-title">Featured Project:<br>Fall Detection for Elderly Patients</h2>
+
+  <div class="featured-grid">
+    <div class="featured-body reveal">
+      <h3>Accidental Fall Prediction &amp; Detection</h3>
+      <p class="feat-sub">Healthcare AI · Ensemble ML · Published IJCA 2025</p>
+
+      <div class="feat-block">
+        <h4>The Problem</h4>
+        <p>Falls are the second leading cause of accidental death globally, with adults over 65 at highest risk. In low-resource clinical settings, fall risk is assessed manually and infrequently — meaning high-risk patients go unmonitored between assessments. A real-time, automated early-warning system could meaningfully reduce mortality and caretaker response time.</p>
+      </div>
+
+      <div class="feat-block">
+        <h4>Dataset &amp; Features</h4>
+        <p>The model was trained on a multi-sensor dataset containing physiological signals (heart rate, blood pressure, balance score) and environmental context (time of day, mobility history, floor surface). Features were engineered to capture both static risk factors and dynamic instability indicators, then standardised using a scikit-learn pipeline.</p>
+      </div>
+
+      <div class="feat-block">
+        <h4>Model Selection &amp; Reasoning</h4>
+        <p>Six classifiers were benchmarked: Logistic Regression, Decision Tree, Random Forest, SVM, AdaBoost, and Bagging SVC. Bagging SVC was selected for production because it delivered the best balance of precision and recall — critical in a medical context where a false negative (missed fall) carries far higher cost than a false positive. The ensemble's variance reduction over a single SVC meaningfully improved stability on unseen patient profiles.</p>
+      </div>
+
+      <div class="feat-block">
+        <h4>Challenges</h4>
+        <p>Class imbalance was the primary technical challenge: genuine fall events are rare relative to normal activity. SMOTE oversampling was applied to the minority class during training. A second challenge was inference latency — the model had to return a prediction and trigger an SMS alert fast enough to be actionable, which was addressed by pre-loading the serialised model at server startup rather than on each request.</p>
+      </div>
+
+      <div class="feat-block">
+        <h4>Deployment</h4>
+        <p>The trained model is serialised with joblib and loaded by a Flask REST API. The front-end sends sensor readings as a JSON payload; the API returns a risk classification and, if high risk is detected, dispatches an SMS to the registered caretaker via a third-party SMS gateway. The full stack is deployed on Render with a persistent worker process. The work was peer-reviewed and published in the International Journal of Computer Applications, Vol. 186, No. 78, 2025.</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:.1s">
+      <p style="font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem;">Model Results</p>
+      <div class="feat-results">
+        <div class="feat-result-item">
+          <div class="r-num">94%+</div>
+          <div class="r-label">Classification accuracy</div>
+        </div>
+        <div class="feat-result-item">
+          <div class="r-num">6</div>
+          <div class="r-label">Classifiers benchmarked</div>
+        </div>
+        <div class="feat-result-item">
+          <div class="r-num">&lt;200ms</div>
+          <div class="r-label">End-to-end inference</div>
+        </div>
+        <div class="feat-result-item">
+          <div class="r-num">Live</div>
+          <div class="r-label">Deployed on Render</div>
+        </div>
+      </div>
+
+      <div class="pub-card" style="margin-top:2rem;">
+        <span class="pub-badge">IJCA · 2025 · DOI: 10.5120/ijca2025924684</span>
+        <h4>Accidental Fall Prediction and Detection in Elderly Persons using Ensemble Techniques</h4>
+        <p>Afote, M. O. &amp; Ochepa, F. O. · Vol. 186, No. 78, pp. 32–36</p>
+      </div>
+
+      <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="https://accidental-fall.onrender.com" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;">
+          View Live Demo
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://github.com/afomike/accidental-fall-detection" target="_blank" rel="noopener" class="btn btn-outline" style="display:inline-flex;">
+          View on GitHub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" aria-label="Featured projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label">What I've built</div>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    <a href="https://github.com/afomike" target="_blank" rel="noopener" class="btn btn-outline" style="white-space:nowrap">
+      View all on GitHub ↗
+    </a>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid">
+
+    <!-- PROJECT 1 -->
+    <article class="project-card reveal" aria-label="Accidental Fall Detection project">
+      <div class="card-img theme-blue">
+        <span role="img" aria-label="medical">🏥</span>
+        <div class="card-tag" data-tag="Healthcare AI">Healthcare AI</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Accidental Fall Prediction &amp; Detection</h3>
+        <p class="card-desc">Falls are the second leading cause of unintentional injury deaths globally — yet most clinical tools flag risk only after the fact. This system uses physiological and environmental sensor data to predict fall risk before an incident occurs, then triggers an SMS alert to the caretaker the moment a fall is detected. The Bagging SVC ensemble was selected after benchmarking six classifiers; the model is serialised with joblib and served via a Flask REST API deployed on Render. Published peer-reviewed in IJCA 2025.</p>
+        <div class="card-tech">
+          <span>Bagging SVC</span><span>scikit-learn</span><span>Flask</span><span>joblib</span><span>SMS API</span>
+        </div>
+        <div class="card-links">
+          <a href="https://accidental-fall.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/accidental-fall-detection" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="project-card reveal" aria-label="NaijaDetect project" style="transition-delay:.07s">
+      <div class="card-img theme-green">
+        <span role="img" aria-label="speech detection">🗣️</span>
+        <div class="card-tag" data-tag="NLP">NLP</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">NaijaDetect — Nigerian Language Hate Speech Detector</h3>
+        <p class="card-desc">Most content moderation models are trained exclusively on English — leaving over 200 million Yoruba, Hausa, and Igbo speakers with no automated protection online. NaijaDetect addresses this gap with a multilingual classifier that detects hate and offensive speech across all three languages in real time. A TF-IDF pipeline was tuned per language corpus; KNN was selected for its strong performance on limited labelled data typical of low-resource NLP tasks. Predictions include per-token LIME explanations surfaced to the user.</p>
+        <div class="card-tech">
+          <span>KNN</span><span>TF-IDF</span><span>NLTK</span><span>Flask</span><span>LIME</span>
+        </div>
+        <div class="card-links">
+          <a href="https://hate-speach-detection-wazobia.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/naijadetect-hate-speech" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="project-card reveal" aria-label="LexAI project" style="transition-delay:.14s">
+      <div class="card-img theme-purple">
+        <span role="img" aria-label="scales of justice">⚖️</span>
+        <div class="card-tag" data-tag="Fairness AI">Fairness AI</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">LexAI — Fair Hiring Intelligence for Law Firms</h3>
+        <p class="card-desc">Algorithmic hiring tools often encode historical biases — reinforcing exactly the discrimination they're meant to remove. LexAI predicts candidate shortlisting outcomes while simultaneously auditing the model for demographic bias using disparate impact ratio and statistical parity metrics. A SHAP force-plot view explains every prediction to non-technical reviewers, making the system accountable to the people it affects, not just the engineers who built it. Trained on synthetic law firm hiring data; deployed as a full-stack Flask app.</p>
+        <div class="card-tech">
+          <span>SHAP</span><span>TF-IDF</span><span>Random Forest</span><span>Fairness Metrics</span><span>Flask</span>
+        </div>
+        <div class="card-links">
+          <a href="https://law-firm-bias-shap.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/lexai-fair-hiring" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 4 -->
+    <article class="project-card reveal" aria-label="Flavr project" style="transition-delay:.21s">
+      <div class="card-img theme-amber">
+        <span role="img" aria-label="food">🍽️</span>
+        <div class="card-tag" data-tag="Recommender">Recommender</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Flavr — Personalised Meal Recommendation Engine</h3>
+        <p class="card-desc">Generic recipe apps ignore user preferences and return irrelevant results. Flavr builds a TF-IDF vector representation of each recipe's ingredients, tags, and cuisine, then ranks candidates using cosine similarity against the user's preference profile. RapidFuzz handles partial or misspelled ingredient queries. Authenticated users receive personalised recommendations with full nutritional breakdowns; session history is used to refine future rankings. The inference pipeline runs under 120ms per request in production.</p>
+        <div class="card-tech">
+          <span>TF-IDF</span><span>Cosine Similarity</span><span>RapidFuzz</span><span>Flask-Login</span>
+        </div>
+        <div class="card-links">
+          <a href="https://predictive-meal.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/flavr-meal-recommender" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 5 -->
+    <article class="project-card reveal" aria-label="PredictFlow project" style="transition-delay:.28s">
+      <div class="card-img theme-teal">
+        <span role="img" aria-label="traffic">🚦</span>
+        <div class="card-tag" data-tag="Classification">Classification</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">PredictFlow — Road Traffic Congestion Classifier</h3>
+        <p class="card-desc">Traffic management systems in African cities are largely reactive — signals change on fixed timers regardless of actual congestion. PredictFlow classifies road conditions into four severity levels from sensor-derived features (speed, vehicle count, time-of-day). The system exposes four interchangeable model backends — Naive Bayes, MLP, Decision Tree, and SVM — selectable per request, allowing planners to compare predictions and understand how different modelling assumptions affect outcomes. Deployed with live inference on Render.</p>
+        <div class="card-tech">
+          <span>SVM</span><span>MLP</span><span>Naive Bayes</span><span>Decision Tree</span><span>Flask</span>
+        </div>
+        <div class="card-links">
+          <a href="https://road-traffic.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/predictflow-traffic" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 6 -->
+    <article class="project-card reveal" aria-label="Cowry Face project" style="transition-delay:.35s">
+      <div class="card-img theme-rose">
+        <span role="img" aria-label="face scan">🪪</span>
+        <div class="card-tag" data-tag="Biometrics">Biometrics</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Cowry Face — Biometric Two-Factor Auth for Lagos BRT</h3>
+        <p class="card-desc">Transit card fraud in Lagos costs operators millions annually — Cowry cards can be tapped by anyone who finds or steals one. Cowry Face introduces a facial verification step into the tap-flow: the user's face is matched against their enrolled embedding using dlib's 128-dimensional face descriptor, with OpenCV handling real-time frame capture. Only a matching card-plus-face pair grants access, making stolen cards functionally useless. The system runs on-device to avoid network latency at turnstiles.</p>
+        <div class="card-tech">
+          <span>dlib</span><span>face_recognition</span><span>OpenCV</span><span>Flask</span>
+        </div>
+        <div class="card-links">
+          <a href="https://cowry-face.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/cowry-face-biometric" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 7 -->
+    <article class="project-card reveal" aria-label="Wofash GAN project" style="transition-delay:.42s">
+      <div class="card-img theme-slate">
+        <span role="img" aria-label="fashion">👗</span>
+        <div class="card-tag" data-tag="Generative AI">Generative AI</div>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Wofash GAN — Synthetic Nigerian Fashion Generation</h3>
+        <p class="card-desc">Fashion datasets skew heavily Western — African fashion designers have little access to synthetic data for e-commerce or design tools. Wofash GAN is a DCGAN built from scratch in PyTorch and trained on the AFRIFASHION40000 benchmark (40,000 labelled images of African women's fashion) for 500 epochs on a Colab GPU. The generator and discriminator architectures use batch normalisation and LeakyReLU activations per the DCGAN paper; training stability was improved through label smoothing and learning rate scheduling. Generated samples show progressive mode coverage across distinct garment types and colour palettes.</p>
+        <div class="card-tech">
+          <span>DCGAN</span><span>PyTorch</span><span>torchvision</span><span>Label Smoothing</span>
+        </div>
+        <div class="card-links">
+          <a href="https://wofash-gan.onrender.com" target="_blank" rel="noopener" class="card-link">
+            Live Demo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/afomike/wofash-gan" target="_blank" rel="noopener" class="card-link-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" aria-label="Contact">
+  <div class="section-label">Say hello</div>
+  <h2 class="section-title">Let's work together</h2>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>
+        I'm open to full-time ML Engineering roles, research collaborations, and contract work — remote or hybrid. If you're working on a problem in healthcare AI, NLP, or responsible systems and need someone who can take a model from research to production, let's talk.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:temidayoafote@gmail.com" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <span>temidayoafote@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/afote-michael-208ba4238" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">💼</div>
+          <span>linkedin.com/in/afote-michael</span>
+        </a>
+        <a href="https://github.com/afomike" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">🐙</div>
+          <span>github.com/afomike</span>
+        </a>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <span>Lagos, Nigeria</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" style="transition-delay:.1s" aria-label="Contact form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" placeholder="Ada" required autocomplete="given-name" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" placeholder="Okonkwo" autocomplete="family-name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="ada@example.com" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Collaboration / Opportunity / Research" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project or idea…" required></textarea>
+      </div>
+      <button type="submit" class="btn-send">
+        Send message
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+      </button>
+      <p class="form-success" id="formSuccess" role="status" aria-live="polite">
+        ✓ Thanks! I'll get back to you soon.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <span>© 2026 Michael Osiako Afote</span> · Built with HTML, CSS &amp; vanilla JS · Lagos, Nigeria
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
