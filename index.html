@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
@@ -134,25 +134,26 @@
       </div>
 
       <div class="about-right reveal" style="transition-delay:.12s">
-        <div class="profile-wrap">
-          <div class="profile-photo-wrap">
-            <img
-              src="images/profile.jpg"
-              alt="Michael Osiako Afote"
-              class="profile-photo"
-              loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-            />
-            <div class="profile-photo-fallback" style="display:none">
-              <span>MOA</span>
-            </div>
+        <!-- Profile photo — large, centred, prominent -->
+        <div class="profile-photo-wrap">
+          <img
+            src="images/profile.jpg"
+            alt="Michael Osiako Afote"
+            class="profile-photo"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          />
+          <div class="profile-photo-fallback" style="display:none">
+            <span>MOA</span>
           </div>
-          <div class="profile-tag">
+          <!-- floating badge overlaid on photo -->
+          <div class="profile-available-badge">
             <span class="badge-dot"></span>
             Available for opportunities
           </div>
         </div>
 
+        <!-- Skills below photo -->
         <div class="skills-section">
           <p class="skills-label">Core Stack</p>
           <div class="skills-grid">
@@ -266,8 +267,10 @@
 
       <!-- PROJECT 1 -->
       <article class="project-card reveal" aria-label="NaijaDetect">
-        <div class="card-header">
-          <div class="card-icon card-icon-green">🗣️</div>
+        <div class="card-img theme-green">
+          <img src="images/project-naijadetect.jpg" alt="NaijaDetect screenshot" class="card-screenshot" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="card-img-fallback" style="display:none">🗣️</div>
           <div class="card-tag">NLP</div>
         </div>
         <div class="card-body">
@@ -286,14 +289,16 @@
 
       <!-- PROJECT 2 -->
       <article class="project-card reveal" aria-label="LexAI" style="transition-delay:.07s">
-        <div class="card-header">
-          <div class="card-icon card-icon-purple">⚖️</div>
+        <div class="card-img theme-purple">
+          <img src="images/project-lexai.jpg" alt="LexAI screenshot" class="card-screenshot" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="card-img-fallback" style="display:none">⚖️</div>
           <div class="card-tag">Fairness AI</div>
         </div>
         <div class="card-body">
           <h3 class="card-title">LexAI</h3>
           <p class="card-subtitle">Fair Hiring Intelligence for Law Firms</p>
-          <p class="card-desc">Predicts candidate shortlisting while auditing the model for demographic bias using disparate impact ratio. SHAP force-plots explain every decision to non-technical reviewers.</p>
+          <p class="card-desc">Predicts candidate shortlisting while auditing for demographic bias using disparate impact ratio. SHAP force-plots explain every decision to non-technical reviewers.</p>
           <div class="card-tech">
             <span>SHAP</span><span>Random Forest</span><span>Fairness Metrics</span><span>Flask</span>
           </div>
@@ -306,8 +311,10 @@
 
       <!-- PROJECT 3 -->
       <article class="project-card reveal" aria-label="Flavr" style="transition-delay:.14s">
-        <div class="card-header">
-          <div class="card-icon card-icon-amber">🍽️</div>
+        <div class="card-img theme-amber">
+          <img src="images/project-flavr.jpg" alt="Flavr screenshot" class="card-screenshot" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="card-img-fallback" style="display:none">🍽️</div>
           <div class="card-tag">Recommender</div>
         </div>
         <div class="card-body">
@@ -326,8 +333,10 @@
 
       <!-- PROJECT 4 -->
       <article class="project-card reveal" aria-label="PredictFlow" style="transition-delay:.21s">
-        <div class="card-header">
-          <div class="card-icon card-icon-teal">🚦</div>
+        <div class="card-img theme-teal">
+          <img src="images/project-predictflow.jpg" alt="PredictFlow screenshot" class="card-screenshot" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="card-img-fallback" style="display:none">🚦</div>
           <div class="card-tag">Classification</div>
         </div>
         <div class="card-body">
@@ -346,14 +355,16 @@
 
       <!-- PROJECT 5 -->
       <article class="project-card reveal" aria-label="Cowry Face" style="transition-delay:.28s">
-        <div class="card-header">
-          <div class="card-icon card-icon-rose">🪪</div>
+        <div class="card-img theme-rose">
+          <img src="images/project-cowryface.jpg" alt="Cowry Face screenshot" class="card-screenshot" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="card-img-fallback" style="display:none">🪪</div>
           <div class="card-tag">Biometrics</div>
         </div>
         <div class="card-body">
           <h3 class="card-title">Cowry Face</h3>
           <p class="card-subtitle">Biometric Two-Factor Auth for Lagos BRT</p>
-          <p class="card-desc">Facial verification step in the transit card tap-flow using dlib's 128-dimensional face descriptors. Stolen cards become functionally useless. Runs on-device to avoid turnstile latency.</p>
+          <p class="card-desc">Facial verification in the transit card tap-flow using dlib's 128-dimensional face descriptors. Stolen cards become functionally useless. Runs on-device to avoid turnstile latency.</p>
           <div class="card-tech">
             <span>dlib</span><span>face_recognition</span><span>OpenCV</span><span>Flask</span>
           </div>
@@ -366,14 +377,16 @@
 
       <!-- PROJECT 6 -->
       <article class="project-card reveal" aria-label="Wofash GAN" style="transition-delay:.35s">
-        <div class="card-header">
-          <div class="card-icon card-icon-slate">👗</div>
+        <div class="card-img theme-slate">
+          <img src="images/project-wofash.jpg" alt="Wofash GAN screenshot" class="card-screenshot" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="card-img-fallback" style="display:none">👗</div>
           <div class="card-tag">Generative AI</div>
         </div>
         <div class="card-body">
           <h3 class="card-title">Wofash GAN</h3>
           <p class="card-subtitle">Synthetic Nigerian Fashion Generation</p>
-          <p class="card-desc">DCGAN built from scratch in PyTorch, trained on AFRIFASHION40000 (40k images) for 500 epochs. Label smoothing and LR scheduling improved training stability across distinct African garment types.</p>
+          <p class="card-desc">DCGAN built from scratch in PyTorch, trained on AFRIFASHION40000 (40k images) for 500 epochs. Label smoothing and LR scheduling improved training stability across garment types.</p>
           <div class="card-tech">
             <span>DCGAN</span><span>PyTorch</span><span>torchvision</span><span>Label Smoothing</span>
           </div>
@@ -471,6 +484,6 @@
   <span>Nigeria · © 2026</span>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
