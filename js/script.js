@@ -5,8 +5,8 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* ─── Hamburger / mobile menu ─── */
-const hamburger   = document.getElementById('hamburger');
-const mobileMenu  = document.getElementById('mobileMenu');
+const hamburger  = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
 
 function toggleMenu(open) {
   hamburger.classList.toggle('open', open);
@@ -15,17 +15,12 @@ function toggleMenu(open) {
   document.body.style.overflow = open ? 'hidden' : '';
 }
 
-hamburger.addEventListener('click', () => {
-  const isOpen = mobileMenu.classList.contains('open');
-  toggleMenu(!isOpen);
-});
+hamburger.addEventListener('click', () => toggleMenu(!mobileMenu.classList.contains('open')));
 
-/* close on link click */
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => toggleMenu(false));
 });
 
-/* close on Escape */
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') toggleMenu(false);
 });
@@ -50,7 +45,7 @@ const revealObserver = new IntersectionObserver(entries => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
